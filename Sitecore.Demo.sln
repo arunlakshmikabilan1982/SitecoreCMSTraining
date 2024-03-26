@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{415C5993-031D-415D-B750-99F9152F9975}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{300E4870-4B62-43F6-B509-D59D1893CD50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{E39A7D66-67EC-45DD-8116-6CAC395E3525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SitecoreExtensions", "SitecoreExtensions", "{E920151F-8147-4DEC-A84D-5C0C57A20274}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{1CD87D31-5A19-47A8-8F58-4975809847B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.Foundation.DependencyInjection", "src\Foundation\DependencyInjection\Sitecore.Demo.Foundation.DependencyInjection.csproj", "{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.Foundation.SitecoreExtensions", "src\Foundation\SitecoreExtensions\Sitecore.Demo.Foundation.SitecoreExtensions.csproj", "{E8BE4879-3428-4D7A-BCEF-5B85778A64C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobBoard", "JobBoard", "{E17A7C0F-8085-438B-8D2D-7BCE68C7FE3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Demo.Feature.JobBoard", "src\Feature\JobBoard\Sitecore.Demo.Feature.JobBoard.csproj", "{8DF04ED0-5044-4DFA-8C30-FF48B4D32634}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog", "Blog", "{1C4A3375-574E-47EA-808D-738E686C9D80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{37BE8057-F619-4278-888D-74D4AD62F1E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BE4879-3428-4D7A-BCEF-5B85778A64C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BE4879-3428-4D7A-BCEF-5B85778A64C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BE4879-3428-4D7A-BCEF-5B85778A64C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BE4879-3428-4D7A-BCEF-5B85778A64C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF04ED0-5044-4DFA-8C30-FF48B4D32634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF04ED0-5044-4DFA-8C30-FF48B4D32634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF04ED0-5044-4DFA-8C30-FF48B4D32634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF04ED0-5044-4DFA-8C30-FF48B4D32634}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E920151F-8147-4DEC-A84D-5C0C57A20274} = {300E4870-4B62-43F6-B509-D59D1893CD50}
+		{1CD87D31-5A19-47A8-8F58-4975809847B1} = {300E4870-4B62-43F6-B509-D59D1893CD50}
+		{8932EADB-14E3-4EE1-BB0A-4D73C806ECCA} = {1CD87D31-5A19-47A8-8F58-4975809847B1}
+		{E8BE4879-3428-4D7A-BCEF-5B85778A64C4} = {E920151F-8147-4DEC-A84D-5C0C57A20274}
+		{E17A7C0F-8085-438B-8D2D-7BCE68C7FE3F} = {415C5993-031D-415D-B750-99F9152F9975}
+		{8DF04ED0-5044-4DFA-8C30-FF48B4D32634} = {E17A7C0F-8085-438B-8D2D-7BCE68C7FE3F}
+		{1C4A3375-574E-47EA-808D-738E686C9D80} = {415C5993-031D-415D-B750-99F9152F9975}
+		{37BE8057-F619-4278-888D-74D4AD62F1E6} = {E39A7D66-67EC-45DD-8116-6CAC395E3525}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCA5F3A1-D102-46C0-A508-BDC765BB6856}
+	EndGlobalSection
+EndGlobal

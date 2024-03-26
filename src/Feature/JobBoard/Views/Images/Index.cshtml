@@ -1,0 +1,17 @@
+﻿@model Sitecore.Demo.Feature.JobBoard.Models.ImageGalleryViewModel
+
+<div class="section-top-border">
+    <h3>Image Gallery</h3>
+    <div class="row gallery-item">
+        @foreach(var item in Model.Images)
+            {
+            <div class="col-md-4">
+            <a href="~/JobBoard/img/elements/g1.jpg" class="img-pop-up">
+                <div class="single-gallery-image" style="background: url(~/JobBoard/img/elements/g1.jpg);"></div>
+            </a>
+        </div>
+            }
+        
+        
+    </div>
+</div>

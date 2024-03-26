@@ -1,0 +1,37 @@
+﻿@model Sitecore.Demo.Feature.JobBoard.Models.Alignment
+
+<div class="whole-wrap">
+    <div class="container box_1170">
+        <div class="section-top-border">
+            <h3 class="mb-30">Left @Model.Title</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src=@Model.Image alt="" class="img-fluid">
+                </div>
+                <div class="col-md-9 mt-sm-20">
+                    <p>
+                        @Model.Description
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-top-border text-right">
+            <h3 class="mb-30">Right @Model.Title</h3>
+            <div class="row">
+                <div class="col-md-9">
+                    <p class="text-right">
+                        @Model.Description
+                    </p>
+                    <p class="text-right">
+                        Before we discuss all of the things that could be affecting your PC’s
+                        performance, let’s
+                        talk a little about what symptoms
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src=@Model.Image alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

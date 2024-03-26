@@ -1,0 +1,110 @@
+﻿@using Sitecore.Mvc
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -  Vamsi Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/JobBoard/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/JobBoard/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/JobBoard/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/JobBoard/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/JobBoard/css/themify-icons.css">
+    <link rel="stylesheet" href="~/JobBoard/css/nice-select.css">
+    <link rel="stylesheet" href="~/JobBoard/css/flaticon.css">
+    <link rel="stylesheet" href="~/JobBoard/css/gijgo.css">
+    <link rel="stylesheet" href="~/JobBoard/css/animate.min.css">
+    <link rel="stylesheet" href="~/JobBoard/css/slicknav.css">
+    <link rel="stylesheet" href="~/JobBoard/css/style.css">
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style>
+        .cartItems {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartItem {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            background-color: gray;
+        }
+
+        .cartCarInfo {
+            margin-left: 10px;
+        }
+
+        .userBox {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .userProfileBox {
+            display: flex;
+            background-color: dimgray;
+        }
+
+        .userProfileImg {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        
+
+        .userProfileInfo {
+            display: flex;
+            margin-left: 15px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    @Html.Sitecore().Placeholder("header")
+    
+        @*@RenderBody()*@
+        @Html.Sitecore().Placeholder("main")
+
+    
+
+    @Html.Sitecore().Placeholder("footer")
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/JobBoard/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="~/JobBoard/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="~/JobBoard/js/popper.min.js"></script>
+    <script src="~/JobBoard/js/bootstrap.min.js"></script>
+    <script src="~/JobBoard/js/owl.carousel.min.js"></script>
+    <script src="~/JobBoard/js/isotope.pkgd.min.js"></script>
+    <script src="~/JobBoard/js/ajax-form.js"></script>
+    <script src="~/JobBoard/js/waypoints.min.js"></script>
+    <script src="~/JobBoard/js/jquery.counterup.min.js"></script>
+    <script src="~/JobBoard/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/JobBoard/js/scrollIt.js"></script>
+    <script src="~/JobBoard/js/jquery.scrollUp.min.js"></script>
+    <script src="~/JobBoard/js/wow.min.js"></script>
+    <script src="~/JobBoard/js/nice-select.min.js"></script>
+    <script src="~/JobBoard/js/jquery.slicknav.min.js"></script>
+    <script src="~/JobBoard/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/JobBoard/js/plugins.js"></script>
+    <script src="~/JobBoard/js/gijgo.min.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="~/JobBoard/js/contact.js"></script>
+    <script src="~/JobBoard/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/JobBoard/js/jquery.form.js"></script>
+    <script src="~/JobBoard/js/jquery.validate.min.js"></script>
+    <script src="~/JobBoard/js/mail-script.js"></script>
+
+
+    <script src="~/JobBoard/js/main.js"></script>
+</body>
+</html>

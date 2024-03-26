@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="job_searcing_wrap overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+                <div class="searching_text">
+                    <h3>@Html.Sitecore().Field("Title1", Model.Item)</h3>
+                    <p>@Html.Sitecore().Field("Description1", Model.Item) </p>
+                    <a href="#" class="boxed-btn3">@Html.Sitecore().Field("Button1", Model.Item)</a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-md-6">
+                <div class="searching_text">
+                    <h3>@Html.Sitecore().Field("Title2", Model.Item)</h3>
+                    <p>@Html.Sitecore().Field("Description2", Model.Item)</p>
+                    <a href="#" class="boxed-btn3">@Html.Sitecore().Field("Button2", Model.Item)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

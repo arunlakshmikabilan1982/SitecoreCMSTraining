@@ -1,0 +1,27 @@
+﻿@model Sitecore.Demo.Feature.JobBoard.Models.CartViewModel
+
+<div class="cartBox">
+    <h1>@Model.Title</h1>
+    <div class="cartItems">
+        @foreach (var cart in Model.CartItems)
+        {
+            <div class="cartItem">
+                <img src="@cart.Image" alt="car1" />
+                <div class="cartCarInfo">
+                    <h1>@cart.Title</h1>
+                    <h3>@cart.Description</h3>
+                    <p>Price:@cart.Price</p>
+                    <h2> Quantity:@cart.Quantity</h2>
+                </div>
+            </div>
+        }
+
+
+
+    </div>
+</div>
+
+
+
+
+

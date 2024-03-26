@@ -1,0 +1,39 @@
+﻿@model Sitecore.Demo.Feature.JobBoard.Models.BlogLeftViewModel
+<section class="blog_area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="blog_left_sidebar">
+                    @foreach (var item in Model.Blogs)
+                    {
+
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src=@item.Image alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>@item.Date.Substring(0, 1)</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2>@item.Title</h2>
+                                </a>
+                                <p>@item.Description</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-user"></i>@item.Tags</a></li>
+                                    <li><a href="#"><i class="fa fa-comments"></i>@item.Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    }
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
