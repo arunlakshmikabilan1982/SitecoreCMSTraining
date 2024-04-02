@@ -1,0 +1,105 @@
+﻿@using Sitecore.Mvc
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Job Board</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Styles/css/animate.min.css" rel="stylesheet" />
+    <link href="~/Styles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Styles/css/candidates.css" rel="stylesheet" />
+    <link href="~/Styles/css/flaticon.css" rel="stylesheet" />
+    <link href="~/Styles/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Styles/css/gijgo.css" rel="stylesheet" />
+    <link href="~/Styles/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Styles/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Styles/css/nice-select.css" rel="stylesheet" />
+    <link href="~/Styles/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/Styles/css/slicknav.css" rel="stylesheet" />
+    <link href="~/Styles/css/style.css" rel="stylesheet" />
+    <link href="~/Styles/css/theme-default.css" rel="stylesheet" />
+    <link href="~/Styles/css/themify-icons.css" rel="stylesheet" />
+
+    <script src="~/Styles/js/ajax-form.js"></script>
+    <script src="~/Styles/js/bootstrap.min.js"></script>
+    <script src="~/Styles/js/contact.js"></script>
+    <script src="~/Styles/js/gijgo.min.js"></script>
+    <script src="~/Styles/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Styles/js/isotope.pkgd.min.js"></script>
+    <script src="~/Styles/js/jquery-ui.js"></script>
+    <script src="~/Styles/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/Styles/js/jquery.counterup.min.js"></script>
+    <script src="~/Styles/js/jquery.form.js"></script>
+    <script src="~/Styles/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Styles/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Styles/js/jquery.slicknav.min.js"></script>
+    <script src="~/Styles/js/jquery.validate.min.js"></script>
+    <script src="~/Styles/js/mail-script.js"></script>
+    <script src="~/Styles/js/main.js"></script>
+    <script src="~/Styles/js/nice-select.min.js"></script>
+    <script src="~/Styles/js/owl.carousel.min.js"></script>
+    <script src="~/Styles/js/plugins.js"></script>
+    <script src="~/Styles/js/popper.min.js"></script>
+    <script src="~/Styles/js/range.js"></script>
+    <script src="~/Styles/js/scrollIt.js"></script>
+    <script src="~/Styles/js/waypoints.min.js"></script>
+    <script src="~/Styles/js/wow.min.js"></script>
+    <style>
+        .cartItems {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cartItem {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            background-color: gray;
+        }
+
+        .cartCarInfo {
+            margin-left: 10px;
+        }
+
+        .userBox {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .userProfileBox {
+            display: flex;
+            background-color: dimgray;
+        }
+
+        .userProfileImg {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+
+
+        .userProfileInfo {
+            display: flex;
+            margin-left: 15px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        @Html.Sitecore().Placeholder("Header")
+        @Html.Sitecore().Placeholder("JobBoard")
+        @Html.Sitecore().Placeholder("Footer")
+
+    </div>
+</body>
+</html>
