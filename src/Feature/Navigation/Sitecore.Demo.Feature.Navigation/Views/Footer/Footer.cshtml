@@ -1,0 +1,102 @@
+﻿@model Sitecore.Demo.Feature.Navigation.Models.FooterViewModel
+
+<footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="@Model.Logo" alt="Logo">
+                            </a>
+                        </div>
+                        <p>
+                            @Model.Gmail <br>
+                            @Model.Phone <br>
+                            @Model.Address
+                        </p>
+                        <div class="socail_links">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.1s" data-wow-delay=".4s">
+                        <h3 class="footer_title">
+                            @Model.Companylabel
+                        </h3>
+                        <ul>
+                            @foreach (var company in Model.Companies)
+                            {
+                                <li><a href="@company.FooterUrl">@company.Footerlabel </a></li>
+                            }
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.2s" data-wow-delay=".5s">
+                        <h3 class="footer_title">
+                            @Model.Categorylabel
+                        </h3>
+                        <ul>
+                            @foreach (var category in Model.Categories)
+                            {
+                                <li><a href="@category.FooterUrl">@category.Footerlabel </a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".6s">
+                        <h3 class="footer_title">
+                            @Model.Subscribelabel
+                        </h3>
+                        <form action="@Model.SubscribeUrl" class="newsletter_form">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit">@Model.Subscribelabel</button>
+                        </form>
+                        <p class="newsletter_text">
+                            @Model.SubscribeDescription
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text wow fadeInUp" data-wow-duration="1.4s" data-wow-delay=".3s">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">                        
+                        @Model.Copyrights_label &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>                       
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
